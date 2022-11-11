@@ -1,0 +1,68 @@
+<div class="wrapper">
+    <div class="main-panel">
+        <div class="welcome-panel">
+            <fa-icon class="users-line-icon" [icon]="faUsersLine"></fa-icon>
+            <mat-label><h1>Welcome in Photopost</h1></mat-label>
+        </div>
+    
+        <mat-tab-group mat-align-tabs="start">
+            <mat-tab label="Login">
+                <div class="content-wrapper">
+                    <div class="input-element first-element">
+                        <div class="example-container">
+                            <mat-form-field appearance="fill">
+                              <mat-label>Enter your email</mat-label>
+                              <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                              <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                            </mat-form-field>
+                          </div>
+                    </div>
+                    <div class="input-element">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Enter your password</mat-label>
+                            <input matInput [type]="'password'">
+                        </mat-form-field>
+                    </div>
+                    <div class="input-element">                   
+                        <button (click)="btnClicked()" mat-raised-button color="primary">Login</button>
+                    </div> 
+                </div>
+            </mat-tab>
+            
+            <mat-tab label="Register">
+                <div class="content-wrapper">
+                    <div class="input-element first-element">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Enter your first name</mat-label>
+                            <input matInput placeholder="First name">
+                          </mat-form-field>
+                    </div>
+                    <div class="input-element">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Enter your last name</mat-label>
+                            <input matInput placeholder="Last name">
+                          </mat-form-field>
+                    </div>
+                    <div class="input-element">
+                        <div class="example-container">
+                            <mat-form-field appearance="fill">
+                              <mat-label>Enter your email</mat-label>
+                              <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                              <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                            </mat-form-field>
+                          </div>
+                    </div>
+                    <div class="input-element">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Enter your password</mat-label>
+                            <input matInput [type]="'password'">
+                        </mat-form-field>
+                    </div>
+                    <div class="input-element">
+                        <button (click)="btnClicked()" mat-raised-button color="primary">Register</button>
+                    </div> 
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+.wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    z-index: 2;
+}
+
+.main-panel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+    left: 30%;
+    background-color: #97D2EC;
+    width: 40%;
+    height: 90%;
+    color: #25316D;
+    font-size: 16px;
+}
+
+.welcome-panel {
+    position: absolute;
+    top: 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.users-line-icon {
+    color: #673ab7;
+    font-size: 90px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5%;
+}
+
+.first-element {
+    margin-top: 5%;
+}

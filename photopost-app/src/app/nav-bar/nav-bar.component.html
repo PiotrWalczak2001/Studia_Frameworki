@@ -1,0 +1,27 @@
+<div class="navbar">
+    <div class="navbar-items">
+        <div class="nav-icons-wrapper">
+            <a href="/posts"><fa-icon class="nav-icon" [icon]="faListUl"></fa-icon></a>
+            <a href="/photos"><fa-icon class="nav-icon" [icon]="faCameraRetro"></fa-icon></a>
+        </div>
+        <div class="nav-search-filter">
+            <a><fa-icon class="search-bar-icon" [icon]="faMagnifyingGlass"></fa-icon></a>
+            <input class="search-input" type="text" placeholder="Find user" [(ngModel)]="searchValue">
+            <a (click)="clearValue()"><fa-icon class="search-bar-icon" [icon]="faXmark"></fa-icon></a>
+        </div>
+
+        <div class="nav-profile" [matMenuTriggerFor]="menu">
+            <div class="username-label">
+                <p>{{data.userName}}</p>
+            </div>
+            <div class="profile-icon">
+                <fa-icon class="user-icon" [icon]="faCircleUser"></fa-icon>
+            </div>
+        </div>
+
+        <mat-menu #menu="matMenu" yPosition="below" xPosition="before" class="profile-menu">
+            <button [routerLink]="['/userProfile/1']" class="menu-btn"> Profile</button>
+            <button class="menu-btn" (click)="logutClick()">Logout</button>
+        </mat-menu>
+    </div>
+</div>

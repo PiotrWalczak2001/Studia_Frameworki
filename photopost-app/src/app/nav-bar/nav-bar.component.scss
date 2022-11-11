@@ -1,0 +1,118 @@
+::ng-deep .profile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 0% !important;
+
+    .menu-btn {
+        width: 100%;
+        padding: 5px;
+        background: none;
+        border: none;
+    }
+
+    .menu-btn:hover {
+        background-color: #97D2EC;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 2%;
+    left: 25%;
+    width: 50%;
+    height: 6%;
+    border-radius: 30px;
+    background-color: #5F6F94;
+    z-index: 1;
+
+    .navbar-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+        flex-direction: row;
+        height: 100%;
+
+        .nav-icons-wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            height: 70%;
+            width: 10%;
+            gap: 20%;
+
+            .nav-icon {
+                color: #fff;
+            }
+        }
+
+        .nav-search-filter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60%;
+            width: 40%;
+            background-color: #fff;
+            
+            .search-bar-icon {
+                font-size: 26px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .search-input {
+                padding-left: 5%;
+            }
+
+            input {
+                font-size: 18px;
+                width: 80%;
+                height: 100%;
+                border: 0;
+                background: none;
+            }
+        }
+
+        .profile-wrapper {
+            display: flex;
+            width: 20%;
+            height: 60%;
+            border-radius: 30px;
+            background-color: #FEF5AC;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-profile {
+            display: flex;
+            height: 70%;
+            width: 20%;
+            background-color: #fff;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            
+            .username-label {
+                text-align: center;
+                height: 50%;
+                font-size: 20px;
+            }
+        
+            .profile-icon {
+                font-size: 30px;
+                padding-left: 5%;
+            }
+        }
+
+    }
+}
